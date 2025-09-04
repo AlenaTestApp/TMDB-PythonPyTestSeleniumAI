@@ -2,7 +2,6 @@
 
 
 from pages.locators import *
-from configs.credentials import *
 
 
 class LoginPage:

@@ -26,4 +26,6 @@ env/
 # Logs
 *.log
 .env
+share/man/man1/isympy.1
+
 

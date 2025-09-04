@@ -1,49 +1,18 @@
-# TMDB Automation Project
+🎬 TMDB Automation Project
 
-## Overview
+Overview
+This project automates test scenarios for TMDB using Python and PyTest, following a Page Object Model (POM) structure. 
+The framework supports advanced scenarios, including AI-powered image comparison.
 
-Project Automates Test scenarios for TMDB using Python and PyTest. The Framework uses POM structure.
-The project is designed to be extended with advanced scenarios,
-including **AI-powered visual comparison of images**
+🖼️ AI Image Comparison
 
-## Project Structure
+🌐 Selenium – navigate the web and collect actor images.
 
-TMDB_AUTOMATION/
-│
-├── configs/ # Configuration files: test data, URLs, env settings
-│ ├── __init__.py
-│ ├── credentials.py
-│ ├── endpoints.py
-│ └── env_settings.py
-│
-├── pages/ # POM classes
-│ ├── __init__.py
-│ ├── locators.py
-│ └── login_page.py
-│
-├── tests/ # Test cases
-│ ├── __init__.py
-│ └── test_login.py
-│
-├── utils/ # TBU
-│ └── __init__.py
-│
-├── conftest.py # Pytest fixtures and setup
-├── README.md # Project documentation
-└── .gitignore # Git ignore rules
+🖌️ Pillow (PIL) – load images from local files or URLs.
 
+👁️ MTCNN – detect and align faces in images.
 
+🤖 InceptionResnetV1 (Facenet-PyTorch) – convert faces into numerical embeddings.
 
-## How to run tests
+📊 PyTorch (cosine similarity) – compare embeddings to determine image matches.
 
-To run all tests:
-
-```bash
-pytest -s tests/
-```
-
-To run only login tests:
-
-```bash
-pytest -s tests/test_login.py
-```
