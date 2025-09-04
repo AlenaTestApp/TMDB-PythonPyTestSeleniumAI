@@ -1,6 +1,6 @@
 🎬 TMDB Automation Project
 
-Overview
+Overview:
 This project automates test scenarios for TMDB using Python and PyTest, following a Page Object Model (POM) structure. 
 The framework supports advanced scenarios, including AI-powered image comparison.
 
